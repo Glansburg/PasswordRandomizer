@@ -1,39 +1,25 @@
+// Assignment Code
 
-
-
-function passwordGeneration() {
-  // created sets of arrays for all the array criteria for the project.
-  var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-  var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-  var numbers = ["0","1","2","3","4","5","6","7","8","9"];
-  var specialChars = ["!","@","#","$", "%","%","^", "&", "*", "(",")","-","+","?","/",":",";","[","}",".","<","<","=","_","'","|","~"];
-  var selectedArray= []; // ?>>>>???
-}
-
-// ask user a series of questions about password - add criteria inside.
-prompt:
-
-
-
-
-
-
-
-
-
-
-
-
+// variable targeting the big red "Generate Password button"
 var generateBtn = document.querySelector("#generate");
+
+//testing to see if button works
+function generatePassword() {
+  console.log("hello this is a test")
+  return "generated password will go here!"
+}
 
 // Write password to the #password input
 function writePassword() {
+  //empty function?
   var password = generatePassword();
+  // variable targeting the big text box where the generated password is at
   var passwordText = document.querySelector("#password");
-
+// returns the variable defined aboves value. It is equal to the password variable which is equal to the generatePaswword(): function
   passwordText.value = password;
 
 }
 
-// Add event listener to generate button. goes to end
+// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
