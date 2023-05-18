@@ -33,11 +33,13 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
-LINK TO THE PAGE:https://glansburg.github.io/PasswordRandomizer/ 
+LINK TO THE PAGE: https://glansburg.github.io/PasswordRandomizer/ 
 
 
 
-<img width="1248" alt="2023-05-18 (3)" src="https://github.com/Glansburg/PasswordRandomizer/assets/117139285/e13c8c95-0ba9-4dec-935e-23f2bd041c23">
+<img width="1248" alt="2023-05-18 (2)" src="https://github.com/Glansburg/PasswordRandomizer/assets/117139285/e9f04762-04a3-49a6-a884-606dc813060a">
+
+
 
 
 
