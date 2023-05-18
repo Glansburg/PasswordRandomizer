@@ -6,17 +6,25 @@ var generateBtn = document.querySelector("#generate");
 //testing to see if button works
 function generatePassword() {
   console.log("hello this is a test")
-  //STARTER: setting up intial value assumptions computer doesnt know.
-  var passwordLength = 0;
-  var upperCase = false;
-  var lowerCase = false;
-  var digits = false;
-  var specialChars = false;
-
-  passwordLength = prompt('How many characters would you like in your password? Choose "number 8 through 128"');
-
+  //setting up intial values
+  var passwordLength = 0
+  var lowerCase = false
+  var upperCase = false
+  var digits = false
+  var specialChars = false
 
 // 1. prompt the user for the password criteria
+passwordLength = prompt('How many characters would you like in your password? Choose "number 8 through 128"');
+console.log(passwordLength);
+
+
+
+//if (passwordLength > 8) 
+//else if (passwordLength < 128) ----
+
+
+
+
 
 confirm('Would you like lowercase letters in your password?');
 confirm("Would you like uppercase leters in your password?");
@@ -38,7 +46,7 @@ confirm("Would you like special characters in your password?");
   return "generated password will go here!"
 }
 
-
+generatePassword();
 
 // Write password to the #password input
 function writePassword() {
