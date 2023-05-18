@@ -69,13 +69,36 @@ if (specialChars === true) {
   console.log(specialChars);
 }
 
-//2. Validate the input, 
-//3. Generate password based on criteria.
+
+
+// generating all characters for password
+if (lowerCase) {
+  passwordLength = passwordLength + lowerCaseChars
+}
+if (upperCase) {
+  passwordLength = passwordLength + upperCaseChars
+}
+if (digits) {
+  passwordLength = passwordLength + digitChars
+
+}
+if (specialChars) {
+  passwordLength = passwordLength + specialCharsSet
+}
+
+console.log(passwordLength);
+
+passwordLength = Math.floor(Math.random() * passwordLength.length);
+
+passwordLength = passwordText
+
+console.log(passwordLength);
+
 
 
 
 //4. Display password to the page.
-  return "generated password will go here!"
+  return passwordLength
 }
 
 generatePassword();
