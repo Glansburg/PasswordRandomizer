@@ -36,8 +36,14 @@ if (lowerCase === true) {
 }
 
 //Getting UpperCase letters of user added in data
-confirm("Would you like uppercase leters in your password?");
-
+upperCase = confirm("Would you like uppercase leters in your password?");
+if (upperCase === true) {
+  upperCase = upperCaseChars;
+  console.log(upperCase);
+} else {
+  upperCase === false;
+  console.log(upperCase);
+}
 
 
 
