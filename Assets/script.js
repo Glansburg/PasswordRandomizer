@@ -16,13 +16,16 @@ function generatePassword() {
   // Setting up intial arrays of Data.
   var lowerCaseChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var upperCaseChars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  var digitChars =  ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 // 1. prompt the user for the password criteria
 passwordLength = prompt('How many characters would you like in your password? Choose "number 8 through 128"');
+console.log(passwordLength);11
 
 while(((passwordLength < 8) || (passwordLength > 128))) {
   console.log(passwordLength);
   alert("Please choose a number between 8 and 128 only!")
   passwordLength = prompt('How many characters would you like in your password? Choose "number 8 through 128"');
+  console.log(passwordLength);
 }
 
 //START HERE ON GETTING LOWERCASE LETTERS OF USER ADDED IN DATA
@@ -45,13 +48,26 @@ if (upperCase === true) {
   console.log(upperCase);
 }
 
+// Getting  digits of user if wanted added in data
+digits = confirm("Would you like digits in your password?");
+if (digits === true) {
+  digits = digitChars;
+  console.log(digits);
+} else {
+  digits === false;
+  console.log(digits);
+}
 
 
 
 
 
 
-confirm("Would you like digits in your password?");
+
+
+
+
+
 confirm("Would you like special characters in your password?");
 
 
