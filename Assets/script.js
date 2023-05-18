@@ -15,15 +15,12 @@ function generatePassword() {
 
 // 1. prompt the user for the password criteria
 passwordLength = prompt('How many characters would you like in your password? Choose "number 8 through 128"');
-console.log(passwordLength);
 
-
-
-//if (passwordLength > 8) 
-//else if (passwordLength < 128) ----
-
-
-
+while(((passwordLength < 8) || (passwordLength > 128))) {
+  console.log(passwordLength);
+  alert("Please choose a number between 8 and 128 only!")
+  passwordLength = prompt('How many characters would you like in your password? Choose "number 8 through 128"');
+}
 
 
 confirm('Would you like lowercase letters in your password?');
