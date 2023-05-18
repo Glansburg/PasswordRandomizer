@@ -37,7 +37,7 @@ LINK TO THE PAGE: https://glansburg.github.io/PasswordRandomizer/
 
 
 
-<img width="1248" alt="2023-05-18 (2)" src="https://github.com/Glansburg/PasswordRandomizer/assets/117139285/e9f04762-04a3-49a6-a884-606dc813060a">
+<img width="822" alt="newPIC" src="https://github.com/Glansburg/PasswordRandomizer/assets/117139285/389ad52f-bbeb-4093-a8f3-e4a08489ce56">
 
 
 
@@ -49,7 +49,7 @@ LINK TO THE PAGE: https://glansburg.github.io/PasswordRandomizer/
 
 
 
-```
+
 
 ## Mock-Up
 
