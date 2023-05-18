@@ -17,6 +17,7 @@ function generatePassword() {
   var lowerCaseChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var upperCaseChars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
   var digitChars =  ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  var specialCharsSet = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "?", "/", "-", ":", ";", "[", "]", "{", "}", ".", "<", ">", "=", "_", "`", "|", "~"];
 // 1. prompt the user for the password criteria
 passwordLength = prompt('How many characters would you like in your password? Choose "number 8 through 128"');
 console.log(passwordLength);11
@@ -58,23 +59,15 @@ if (digits === true) {
   console.log(digits);
 }
 
-
-
-
-
-
-
-
-
-
-
-confirm("Would you like special characters in your password?");
-
-
-
-
-//   a: Password length 8 < 128
-//   b: lower, uppercase, numbers, special characters
+// Getting Special Characters of user if wanted added in data
+specialChars = confirm("Would you like special characters in your password?");
+if (specialChars === true) {
+  specialChars = specialCharsSet;
+  console.log(specialChars);
+} else {
+  specialChars === false;
+  console.log(specialChars);
+}
 
 //2. Validate the input, 
 //3. Generate password based on criteria.
